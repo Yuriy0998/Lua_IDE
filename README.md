@@ -9,6 +9,7 @@ Get-ChildItem -Recurse
 Должны быть видны:
 
 CMakeLists.txt
+
 src\main.cpp
 
 src\IdeApplication.hpp
