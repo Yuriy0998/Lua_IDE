@@ -27,6 +27,7 @@ cmake -S . -B build -G "Visual Studio 17 2022" -A x64
 
 5. Сборка Debug
 cmake --build build --config Debug --parallel
+
 Запуск:
 
 .\build\Debug\LuaIDE.exe
@@ -41,6 +42,7 @@ cmake --build build --config Release --parallel
 
 
 6. Открытие решения Visual Studio
+
 После конфигурации появится файл:
 
 build\LuaIDE.sln
