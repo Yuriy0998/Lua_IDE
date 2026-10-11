@@ -1,0 +1,44 @@
+Сборка проекта 
+
+1. открываетете командную строку Developer PowerShell for VS 2022 или другой версии 
+2. Перейдите в каталог проекта пример: cd C:\Projects\LuaIDE 
+3. Проверьте структуру:
+
+Get-ChildItem -Recurse
+
+Должны быть видны:
+
+CMakeLists.txt
+src\main.cpp
+src\IdeApplication.hpp
+src\IdeApplication.cpp
+src\LuaRunner.hpp
+src\LuaRunner.cpp
+
+4. Конфигурация проекта
+
+cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+
+5. Сборка Debug
+cmake --build build --config Debug --parallel
+Запуск:
+
+.\build\Debug\LuaIDE.exe
+
+Сборка Release
+
+cmake --build build --config Release --parallel
+Запуск:
+
+.\build\Release\LuaIDE.exe
+
+
+
+6. Открытие решения Visual Studio
+После конфигурации появится файл:
+
+build\LuaIDE.sln
+
+Открыть его можно командой:
+
+Start-Process .\build\LuaIDE.sln
