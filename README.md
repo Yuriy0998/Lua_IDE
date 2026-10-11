@@ -10,10 +10,15 @@ Get-ChildItem -Recurse
 
 CMakeLists.txt
 src\main.cpp
+
 src\IdeApplication.hpp
+
 src\IdeApplication.cpp
+
 src\LuaRunner.hpp
+
 src\LuaRunner.cpp
+
 
 4. Конфигурация проекта
 
